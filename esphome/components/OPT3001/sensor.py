@@ -34,7 +34,7 @@ CONFIG_SCHEMA = (
         }
     )
     .extend(cv.polling_component_schema("5s"))
-    .extend(i2c.i2c_device_schema(0x45))
+    .extend(i2c.i2c_device_schema(0x44))
 )
 async def to_code(config):
     var = cg.new_Pvariable(config[CONF_ID])

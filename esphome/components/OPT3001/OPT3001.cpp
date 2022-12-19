@@ -10,7 +10,7 @@ static const char *const TAG = "opt3001";
   ClosedCube_OPT3001 myself;
   
   void OPT3001Component::setup () {
-    myself.begin(0x44);
+    myself.begin(0x46);
     delay(100);
     configureSensor_();
     delay(100);
